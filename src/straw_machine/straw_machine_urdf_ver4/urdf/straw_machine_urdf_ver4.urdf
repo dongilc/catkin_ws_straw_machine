@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="straw_machine_urdf_ver4">
+  <link
+    name="base_footprint_link">
+    <inertial>
+      <origin
+        xyz="-4.66499999999999 -1.44963428504303E-15 0.133662842012356"
+        rpy="0 0 0" />
+      <mass
+        value="22.2756864" />
+      <inertia
+        ixx="0.82704398822242"
+        ixy="2.84572559326095E-16"
+        ixz="-1.3234707534071E-15"
+        iyy="1.32108057062241"
+        iyz="1.2986902648288E-16"
+        izz="1.56687794176" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/base_footprint_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.15" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/base_footprint_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.39368092049717 -0.00483290229325627 -0.252252499123037"
+        rpy="0 0 0" />
+      <mass
+        value="1213.92065796691" />
+      <inertia
+        ixx="132.416224920254"
+        ixy="3.58189067398332E-07"
+        ixz="0.0223637390499946"
+        iyy="1043.69559443683"
+        iyz="-0.0001231195243519"
+        izz="1166.88356648259" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link"
+    type="fixed">
+    <origin
+      xyz="0 0 0.545676016401044"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint_link" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mu1">
+    <inertial>
+      <origin
+        xyz="-0.337363269809431 -0.0214591555299249 -0.133596408142677"
+        rpy="0 0 0" />
+      <mass
+        value="75.0555960646854" />
+      <inertia
+        ixx="0.22631249756036"
+        ixy="-4.14959191625146E-06"
+        ixz="-3.0561326908148E-05"
+        iyy="1.30907938988668"
+        iyz="-0.00302122519673947"
+        izz="1.19253289599207" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu1"
+    type="prismatic">
+    <origin
+      xyz="-0.991499999999993 0.225000000001637 0.146510533367815"
+      rpy="1.57079632678867 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.035"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu2">
+    <inertial>
+      <origin
+        xyz="-0.337376161431358 0.0214591554690579 -0.133596408148156"
+        rpy="0 0 0" />
+      <mass
+        value="75.0555960649108" />
+      <inertia
+        ixx="0.226312497550682"
+        ixy="-4.14960122545457E-06"
+        ixz="3.05614336214979E-05"
+        iyy="1.30907938989656"
+        iyz="0.00302122510940392"
+        izz="1.19253289599206" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu2"
+    type="prismatic">
+    <origin
+      xyz="-0.991499999999999 -0.225000000000211 0.146510533368733"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.035"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu3">
+    <inertial>
+      <origin
+        xyz="-0.337363269646317 -0.0214591556499365 -0.133596408146301"
+        rpy="0 0 0" />
+      <mass
+        value="75.0555960636088" />
+      <inertia
+        ixx="0.226312497647726"
+        ixy="-4.14963396061636E-06"
+        ixz="-3.05616878545778E-05"
+        iyy="1.30907938979761"
+        iyz="-0.00302122501363324"
+        izz="1.19253289599207" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu3"
+    type="prismatic">
+    <origin
+      xyz="-1.7415 0.225000000000725 0.146510533365592"
+      rpy="1.57079632679489 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.07"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu4">
+    <inertial>
+      <origin
+        xyz="-0.337376161447409 0.0214591554111778 -0.133596408148544"
+        rpy="0 0 0" />
+      <mass
+        value="75.0555960647155" />
+      <inertia
+        ixx="0.226312497582339"
+        ixy="-4.14958139590583E-06"
+        ixz="3.05614270823278E-05"
+        iyy="1.30907938986475"
+        iyz="0.00302122516259459"
+        izz="1.19253289599207" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu4"
+    type="prismatic">
+    <origin
+      xyz="-1.74149999999999 -0.224999999999301 0.146510533366394"
+      rpy="-1.57079632680112 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.07"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu5">
+    <inertial>
+      <origin
+        xyz="-0.33645841124075 -0.0214622549158839 -0.133125891601043"
+        rpy="0 0 0" />
+      <mass
+        value="9.77659329312296" />
+      <inertia
+        ixx="0.0294016457699521"
+        ixy="-3.70764876483109E-07"
+        ixz="-3.96925533772991E-06"
+        iyy="0.170020913698898"
+        iyz="-0.000392366747018805"
+        izz="0.154878015158681" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.741176470588235 0.733333333333333 0.725490196078431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu5"
+    type="prismatic">
+    <origin
+      xyz="-2.4915 0.270000000000725 0.146510533366868"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.105"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu6">
+    <inertial>
+      <origin
+        xyz="-0.336471264636451 0.0214622555944236 -0.133125891602544"
+        rpy="0 0 0" />
+      <mass
+        value="9.77659329330807" />
+      <inertia
+        ixx="0.0294016457672098"
+        ixy="-3.70765226202612E-07"
+        ixz="3.96889147847943E-06"
+        iyy="0.170020913702231"
+        iyz="0.000392367125430016"
+        izz="0.154878015158681" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.741176470588235 0.733333333333333 0.725490196078431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu6"
+    type="prismatic">
+    <origin
+      xyz="-2.4915 -0.270000000000212 0.146510533368713"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.105"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu7">
+    <inertial>
+      <origin
+        xyz="-0.336471264636106 0.0214622555944244 -0.133125891602264"
+        rpy="0 0 0" />
+      <mass
+        value="9.77659329331876" />
+      <inertia
+        ixx="0.029401645767234"
+        ixy="-3.7076522637575E-07"
+        ixz="3.96889148210432E-06"
+        iyy="0.170020913702255"
+        iyz="0.000392367125426981"
+        izz="0.154878015158681" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.741176470588235 0.733333333333333 0.725490196078431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu7"
+    type="prismatic">
+    <origin
+      xyz="-3.2415 -0.270000000000213 0.146510533368611"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.125"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu8">
+    <inertial>
+      <origin
+        xyz="-0.00902959477954496 0.0698943780550052 1.18977000157236"
+        rpy="0 0 0" />
+      <mass
+        value="4.8234383267443" />
+      <inertia
+        ixx="1.99920769464568"
+        ixy="1.82398415653516E-07"
+        ixz="-5.14382621291923E-11"
+        iyy="1.99666259099405"
+        iyz="-3.43983261025043E-13"
+        izz="0.00536705301278458" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.745098039215686 0.745098039215686 0.745098039215686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu8"
+    type="prismatic">
+    <origin
+      xyz="-0.850000000000082 0.0700000000007299 -0.0749894666276235"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu8" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.75"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu9">
+    <inertial>
+      <origin
+        xyz="-1.3600879070105 -0.0600068772999049 0.0195748859504543"
+        rpy="0 0 0" />
+      <mass
+        value="7.92741305255925" />
+      <inertia
+        ixx="0.00932874603458185"
+        ixy="2.22105360794814E-14"
+        ixz="-1.14039359219693E-11"
+        iyy="6.17044531613232"
+        iyz="9.54373310362604E-15"
+        izz="6.17707331946573" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu9"
+    type="prismatic">
+    <origin
+      xyz="-0.135999999999621 0.00999999999901301 -0.17049999999978"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="mu8" />
+    <child
+      link="mu9" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.025"
+      upper="0"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu10">
+    <inertial>
+      <origin
+        xyz="-1.14500000109188 0.109999976859875 0.0523378904470693"
+        rpy="0 0 0" />
+      <mass
+        value="8.18501864046988" />
+      <inertia
+        ixx="0.00888285080521465"
+        ixy="1.08030207541719E-10"
+        ixz="-4.49073728432688E-14"
+        iyy="5.12456069917849"
+        iyz="6.01493416172434E-15"
+        izz="5.12545235396483" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.745098039215686 0.745098039215686 0.745098039215686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu10"
+    type="prismatic">
+    <origin
+      xyz="-1.309 0.110000000002713 0.248010533366889"
+      rpy="3.14159265358327 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu10" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.025"
+      upper="0"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu11">
+    <inertial>
+      <origin
+        xyz="-0.261694611268462 0.0256427807403586 -0.100500000001531"
+        rpy="0 0 0" />
+      <mass
+        value="1.25114323955213" />
+      <inertia
+        ixx="0.00071789992859595"
+        ixy="4.56461474016221E-16"
+        ixz="3.92564988563595E-16"
+        iyy="0.0461840094909978"
+        iyz="3.65523880633234E-15"
+        izz="0.0457622801168268" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.745098039215686 0.745098039215686 0.745098039215686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu11"
+    type="revolute">
+    <origin
+      xyz="-4.03499999999999 -0.100499999998081 0.0700105333734"
+      rpy="1.5707963267848 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu11" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.162"
+      upper="0"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="mu12">
+    <inertial>
+      <origin
+        xyz="0.00300000000132283 -0.101000000000001 -0.0202756052723925"
+        rpy="0 0 0" />
+      <mass
+        value="0.0236831928822398" />
+      <inertia
+        ixx="4.39873596459812E-06"
+        ixy="3.03530500864316E-24"
+        ixz="-6.23340238962506E-21"
+        iyy="4.39873596459812E-06"
+        iyz="5.82029526227969E-22"
+        izz="1.2467025316996E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.745098039215686 0.745098039215686 0.745098039215686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/mu12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mu12"
+    type="prismatic">
+    <origin
+      xyz="-0.902500000000083 0.101000000000221 0.137510215448968"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mu12" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.02"
+      upper="0"
+      effort="10"
+      velocity="10" />
+  </joint>
+  <link
+    name="straw_raw">
+    <inertial>
+      <origin
+        xyz="-0.11 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0110584061406361" />
+      <inertia
+        ixx="8.84672491250885E-08"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/straw_raw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.384313725490196 0.164705882352941 0.0509803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/straw_raw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="straw_raw"
+    type="fixed">
+    <origin
+      xyz="-0.44711 0.11068 0.2887"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="straw_raw" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="straw_holed">
+    <inertial>
+      <origin
+        xyz="-0.11 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.00583158136322606" />
+      <inertia
+        ixx="6.87033179355069E-08"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/straw_holed.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.384313725490196 0.164705882352941 0.0509803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://straw_machine_urdf_ver4/meshes/straw_holed.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="straw_holed"
+    type="fixed">
+    <origin
+      xyz="-0.51467 0.10625 0.68512"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="straw_holed" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

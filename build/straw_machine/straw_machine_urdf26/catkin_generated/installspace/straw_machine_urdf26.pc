@@ -1,0 +1,8 @@
+prefix=/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/install
+
+Name: straw_machine_urdf26
+Description: Description of straw_machine_urdf26
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
