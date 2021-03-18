@@ -131,7 +131,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/gtest/cmake_install.cmake")
-  include("/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/straw_machine/straw_machine_urdf26/cmake_install.cmake")
   include("/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/straw_machine/straw_machine_urdf_ver1/cmake_install.cmake")
   include("/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/straw_machine/straw_machine_urdf_ver2/cmake_install.cmake")
   include("/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/straw_machine/straw_machine_urdf_ver3/cmake_install.cmake")

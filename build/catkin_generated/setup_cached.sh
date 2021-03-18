@@ -7,6 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/melodic/lib'
-export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
+export CMAKE_PREFIX_PATH="/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/src:$ROS_PACKAGE_PATH"

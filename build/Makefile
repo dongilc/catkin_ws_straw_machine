@@ -294,7 +294,7 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 # Help Target

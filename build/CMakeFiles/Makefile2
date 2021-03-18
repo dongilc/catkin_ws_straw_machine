@@ -405,56 +405,6 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory straw_machine/straw_machine_urdf26
-
-# Convenience name for "all" pass in the directory.
-straw_machine/straw_machine_urdf26/all:
-
-.PHONY : straw_machine/straw_machine_urdf26/all
-
-# Convenience name for "clean" pass in the directory.
-straw_machine/straw_machine_urdf26/clean: straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : straw_machine/straw_machine_urdf26/clean
-
-# Convenience name for "preinstall" pass in the directory.
-straw_machine/straw_machine_urdf26/preinstall:
-
-.PHONY : straw_machine/straw_machine_urdf26/preinstall
-
-#=============================================================================
-# Target rules for target straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/CMakeFiles 0
-.PHONY : straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-# clean rule for target.
-clean: straw_machine/straw_machine_urdf26/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory straw_machine/straw_machine_urdf_ver1
 
 # Convenience name for "all" pass in the directory.
@@ -463,7 +413,7 @@ straw_machine/straw_machine_urdf_ver1/all:
 .PHONY : straw_machine/straw_machine_urdf_ver1/all
 
 # Convenience name for "clean" pass in the directory.
-straw_machine/straw_machine_urdf_ver1/clean:
+straw_machine/straw_machine_urdf_ver1/clean: straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : straw_machine/straw_machine_urdf_ver1/clean
 
@@ -471,6 +421,38 @@ straw_machine/straw_machine_urdf_ver1/clean:
 straw_machine/straw_machine_urdf_ver1/preinstall:
 
 .PHONY : straw_machine/straw_machine_urdf_ver1/preinstall
+
+#=============================================================================
+# Target rules for target straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cdi/Dropbox/Workspace_CDI/workspace_prog/catkin_ws_straw_machine/build/CMakeFiles 0
+.PHONY : straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/build.make straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+# clean rule for target.
+clean: straw_machine/straw_machine_urdf_ver1/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory straw_machine/straw_machine_urdf_ver2
